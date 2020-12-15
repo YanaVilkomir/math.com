@@ -1,0 +1,292 @@
+.main{
+  margin-top: 95px;
+}
+.container_2 {
+  grid-area: main;
+  display: grid;
+  margin: 10px 0 50px 0;
+  grid-template: 1fr / 1fr minmax(auto, 870px) minmax(auto, 300px)1fr;
+}
+.main_content {
+  grid-column: 2/3;
+  overflow: hidden;
+}
+
+.content_work {
+  margin: 10px 0 10px 0;
+  gap: 10px;
+}
+
+.right_aside {
+  display: grid;
+  grid-column: 3/4;
+  padding: 0px 15px 0px 15px;
+  justify-content: center;
+}
+
+/*стили для блока travelling_text*/
+.travelling_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.travelling_header_text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #171717;
+  padding-bottom: 20px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+  padding-bottom: 25px;
+}
+
+.post {
+  font-size: 12px;
+  line-height: 24px;
+  color: #666666;
+  padding-bottom: 30px;
+}
+
+.container_2 .button {
+  background: #4D2982;
+  padding: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  max-height: 50px;
+  color: #FFFFFF;
+  width: 230px;
+  margin-bottom: 30px;
+}
+
+/* main_content*/
+.work img {
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  padding: 0 10px;
+  object-fit: cover;
+}
+
+.content_work {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  padding: 0 10px;
+  justify-items: center;
+}
+
+.item_work {
+  display: grid;
+  justify-items: center;
+}
+
+.travelling_text {
+  padding: 15px;
+  justify-content: start;
+}
+
+/*avtor*/
+.aside {
+  display: grid;
+  justify-items: center;
+}
+
+.author {
+  display: flex;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 85%;
+}
+
+.author p:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #171717;
+}
+
+.author p:last-child {
+font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #999999;
+}
+
+.aside_text {
+  padding: 15px 0 0 15px;
+}
+
+.aside_cont_text {
+  padding: 25px 0;
+
+  font-size: 15px;
+  line-height: 25px;
+  color: #666666;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.aside_footer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aside_footer p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #666666;
+}
+
+.aside_most_popular {
+  padding: 0 5px;
+  margin-top: 70px;
+}
+
+.popular {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #171717;
+  padding-bottom: 25px;
+}
+
+.aside_most_popular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.aside_most_popular p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #171717;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.travelling_text {
+  max-width: 627px;
+}
+
+.header_subtitle li {
+  background: url(../img/list_img.png) 0 15px no-repeat;
+  padding: 0 0 0 22px;
+  line-height: 35px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.right_li li {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.aside_text_ligth {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #171717;
+}
+
+.aside_list {
+  padding: 10px;
+}
+
+.text_ligth p {
+  font-weight: normal;
+}
+
+.bold_text {
+  font-weight: bold;
+}
+
+.tags {
+  font-family: Mulish;
+  font-size: 12px;
+  line-height: 15px;
+  color: #666666;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+}
+
+.tags p {
+  padding: 10px;
+}
+
+.gallery_item {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.header_list_2 {
+  display: grid;
+  /*меню в ряд с авт. заполнением*/
+  grid-auto-flow: column;
+}
+@media (max-width: 1000px) {
+  .content_work {
+    grid-template: 1fr / 1fr 1fr;
+  }
+
+  .right_aside {
+    grid-column: 1/4;
+  }
+
+  .main_content {
+    grid-column: 1/4;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 650px) {
+  .content_work {
+    grid-template: 1fr / 1fr;
+  }
+
+  .right_aside {
+    grid-column: 1/4;
+  }
+
+  .footer_row {
+    grid-template: 1fr / 1fr;
+  }
+
+  .gallery_item {
+    grid-template-columns: repeat(5, auto);
+  }
+
+  .header_2.open nav {
+    display: grid;
+  }
+
+  .header_list {
+    display: block;
+    background-color: #fff;
+    color: white;
+    margin-top: 36px;
+    align-items: center;
+  }
+
+
+}
