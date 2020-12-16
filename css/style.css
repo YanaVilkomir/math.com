@@ -1,8 +1,7 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: Lato;
   margin: 0;
 }
-
 .container {
   max-width: 1110px;
   margin: auto;
@@ -48,6 +47,9 @@ body {
 }
 .button:hover {
   color: rgba(79, 16, 173, 0.6);
+}
+.button_purple:hover {
+  color: #9f80cc;
 }
 a {
   color: #ffffff;
