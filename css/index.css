@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
   font-family: "Lato";
   src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
   font-style: normal;
@@ -154,12 +154,15 @@ a:focus, a:active {
 :focus, :active {
   outline: none;
 }
+
 .button_purple:hover {
-    color: #9f80cc;
+  color: #9f80cc;
 }
+
 .carousel-indicators {
-    z-index: 0;
+  z-index: 0;
 }
+
 /*Into styles end*/
 /*карусель*/
 .about .carousel-indicators li {
@@ -436,6 +439,9 @@ ul.item li {
   outline: none;
 }
 
+button:focus {
+    outline: none;
+}
 @media (max-width: 1300px) {
   header .btn {
     display: none;
@@ -479,6 +485,7 @@ ul.item li {
     font-size: 17px;
   }
 }
+
 @media (max-width: 360px) {
   .title {
     color: #ffffff;

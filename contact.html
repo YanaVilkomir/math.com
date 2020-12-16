@@ -71,7 +71,7 @@
   </header>
   <main class="main_content">
     <div class="container-md mt-5">
-      <div class="row  row-cols-1 row-cols-md-2">
+      <div class="row row-cols-1 row-cols-md-2 wow fadeInUp bg-white" data-wow-delay=".4s">
         <div class="col">
           <div class="row">
             <div class="col-12">
@@ -233,6 +233,14 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    $(document).ready(function() {
+      new WOW().init();
+    });
+  </script>
   <script>
     $('#myModal').on('shown.bs.modal', function() {
       $('#myInput').trigger('focus')
