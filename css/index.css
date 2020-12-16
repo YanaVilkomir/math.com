@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: "Lato";
   src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
   font-style: normal;
@@ -154,7 +154,12 @@ a:focus, a:active {
 :focus, :active {
   outline: none;
 }
-
+.button_purple:hover {
+    color: #9f80cc;
+}
+.carousel-indicators {
+    z-index: 0;
+}
 /*Into styles end*/
 /*карусель*/
 .about .carousel-indicators li {
